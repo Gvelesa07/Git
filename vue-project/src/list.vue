@@ -21,12 +21,13 @@ export default{
 <style>
 ul {
     display: flex ;
+    margin-left: 350px
 } 
 
 li {
     color: rgba(151, 33, 236, 0.874);
-  width: 100px;
-  font-weight: 600;
+    width: 95px;
+    font-weight: 600;
 }
     
 </style>

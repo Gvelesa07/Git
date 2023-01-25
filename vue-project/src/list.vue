@@ -1,33 +1,24 @@
 <template>
- <div class="div1">
-   <ul>
-    <li v-for="item in list" :key="item.index">{{ item }}</li>
-   </ul>
- </div>
-
-</template>
-
-<script>
-export default{
+    <navmenu />
+ </template> 
+      <script>
+      export default {
+    props: {
+        menuList : {type : Array , required:true}
+    
+    },
     data(){
         return{
-            list: ["Home","Product","Contact","AboutUs"]
+
         }
     }
-}
+       }
+      </script>
 
-</script>
-
-<style>
-ul {
-    display: flex ;
-    margin-left: 350px
-} 
-
-li {
-    color: rgba(151, 33, 236, 0.874);
-    width: 95px;
-    font-weight: 600;
-}
-    
-</style>
+      <template>
+        <ul>
+    <li v-for="item in menuList" :key="item.id">
+     <a :href="item.url">{{ item.title }}</a>
+     </li>
+    </ul>
+      </template>

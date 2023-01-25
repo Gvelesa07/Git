@@ -32,13 +32,6 @@
  </script>
 
  <template>
-  <div class="div1">
-    <ul>
-       <li v-for="item in Link" :key="item.id">
-      <a :href="item.url"> {{ item.name }}</a>
-      </li>
-    </ul>
-  </div>
-
+  <div class="div1"> </div>
   <Menu :menuData="data"/>
  </template>

@@ -1,10 +1,8 @@
-<template>
-    <navmenu />
- </template> 
+
       <script>
       export default {
     props: {
-        menuList : {type : Array , required:true}
+        menuData : {type : Array , required:true}
     
     },
     data(){
